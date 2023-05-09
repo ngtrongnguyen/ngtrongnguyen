@@ -1,0 +1,44 @@
+
+*  {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+html {
+    font-size: 62,5%;
+    line-height: 1,6rem;
+    box-sizing: border-box;
+    padding-left: 0px;
+
+}
+
+.grid {
+    width: 1600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 7px;
+}
+
+.grid__fullgrid {
+    width: 100%;
+
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Animation */
+
+@keyframes ShowIn {
+    from {
+        opacity: 0;
+        
+        /* opacity: Do hien thi trong suot */
+    }
+    to {
+        opacity: 1;
+    }
+}
+

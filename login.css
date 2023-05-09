@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background: url('https://images.pexels.com/photos/39649/solar-flare-sun-eruption-energy-39649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: active 2s ease;
+
+}
+
+.wrapper.active{
+    height: 520px;
+}
+/* LOGIN */
+h2{
+    font-size: 2em;
+    
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: black;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: black;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: black;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+    color: #FFEFA6;
+}
+.form-value button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background:#FFEFA6;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+}
+
+.register{
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+    color: #FFEFA6;
+    
+}
+
+/* REGISTER */
+.form-value-Regis{
+    /* display: none; */
+    /* opacity: 1; */
+    
+}
+.wrapper .login{
+    /* display: none ; */
+}
+
+.wrapper  .form-value-Regis{
+    position: absolute;
+    transform: translateX(400px);
+}
+
+
+.form-value-Regis button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background:#FFEFA6;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+}
+/* */
+.nguyen0{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .nguyen0 button  {
+   
+    
+    font-weight: 700;
+    
+    padding: 0.5em 1em;
+    
+    color:  red;
+    background-color: var(--clr-rgba);
+    border: 10px solid black;
+    border-radius: 5px;
+    
+}
+
+
+.nguyen2:focus {
+    stroke: #FFEFA6;
+    animation: slideInLeft 1s ease-in;
+
+}
+
+@keyframes slideInLeft {
+    from {
+    transform: translateX(-300px) ;
+    transform: scale(2);
+    }
+    
+    to {
+    transform: translateXx(0);
+    
+    }
+}
+   
