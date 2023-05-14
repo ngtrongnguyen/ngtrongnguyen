@@ -29,11 +29,14 @@
     align-items: center;
     z-index: 1;
     transition: active 2s ease;
+    overflow: hidden;
 
 }
 
 .wrapper.active{
     height: 520px;
+    /* display: block; */
+
 }
 /* LOGIN */
 h2{
@@ -136,12 +139,27 @@ top: -5px;
 }
 .wrapper .login{
     /* display: none ; */
+    transition: transform  .18s ease;
+    transform: translateX(0);
 }
 
 .wrapper  .form-value-Regis{
     position: absolute;
+    transition: none;
     transform: translateX(400px);
 }
+
+.wrapper.active .login{
+    transition: none;
+    transform: translateX(-400px);
+
+}
+
+.wrapper.wrapper.active .form-value-Regis{
+    /* display: none ; */
+    transition: transform  .18s ease;
+    transform: translateX(0);
+}    
 
 
 .form-value-Regis button{

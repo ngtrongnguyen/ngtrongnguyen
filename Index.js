@@ -152,18 +152,17 @@ for (var course of courses) {
 }   
 console.log(totalCoin);
 
-var nguyen12  = document.querySelector('h1');
 
-console.log(nguyen12)
 
 
 // login-register
 
-const wrapper = document.querySelector('.wrapper');
-const loginLink = document.querySelector('.login-link');
+var wrapper = document.querySelector('.wrapper');
+var loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 
-registerLink.addEventListener('click', () => {
+registerLink.addEventListener('click',  () => {
+   
     wrapper.classList.add('active')
 });
 
