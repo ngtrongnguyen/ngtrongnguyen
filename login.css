@@ -32,7 +32,7 @@
     overflow: hidden;
 
 }
-
+/* Active */
 .wrapper.active{
     height: 520px;
     /* display: block; */
@@ -142,7 +142,7 @@ top: -5px;
     transition: transform  .18s ease;
     transform: translateX(0);
 }
-
+/* CHANGE FORMBOX */
 .wrapper  .form-value-Regis{
     position: absolute;
     transition: none;
